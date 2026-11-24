@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("tr", {
   "socialDescription": "Rol yapabileceğin, karakterler oluşturabileceğin ve birlikte dünyalar kurabileceğin, yetişkinlere (18+) yönelik çok oyunculu bir sandbox oyunu. Karakterini boya, eserlerini paylaş, görsel araçlarla etkileşimli nesneler, arayüzler ve oyunlar oluştur.",
   "socialImageAlt": "Sıcak bir kafede sandviç ve kahve servisi yapan Furry Temple karakterleri",
   "languageLabel": "Dil",
-  "languageAutomatic": "Tarayıcı dilini kullan",
-  "languageAutomaticSelection": "Otomatik",
   "aboutLink": "Hakkında",
   "featuresLink": "Özellikler",
   "downloadLink": "İndir",

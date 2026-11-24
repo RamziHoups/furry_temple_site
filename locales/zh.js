@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("zh", {
   "socialDescription": "一款面向成年玩家（18+）的多人沙盒游戏，支持角色扮演、角色创作和多人世界构建。绘制角色、分享作品，并用可视化工具制作互动道具、界面和游戏。",
   "socialImageAlt": "Furry Temple 的角色们在温馨的咖啡馆里供应三明治和咖啡",
   "languageLabel": "语言",
-  "languageAutomatic": "使用浏览器语言",
-  "languageAutomaticSelection": "自动",
   "aboutLink": "关于",
   "featuresLink": "游戏特色",
   "downloadLink": "下载",

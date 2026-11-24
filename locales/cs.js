@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("cs", {
   "socialDescription": "Sandbox pro více hráčů od 18 let, ve kterém můžete hrát role, tvořit postavy a společně stavět světy. Malujte svou postavu, sdílejte výtvory a tvořte interaktivní objekty, rozhraní a hry pomocí vizuálních nástrojů.",
   "socialImageAlt": "Postavy ze hry Furry Temple podávají sendviče a kávu v útulné kavárně",
   "languageLabel": "Jazyk",
-  "languageAutomatic": "Použít jazyk prohlížeče",
-  "languageAutomaticSelection": "Automaticky",
   "aboutLink": "O hře",
   "featuresLink": "Funkce",
   "downloadLink": "Ke stažení",

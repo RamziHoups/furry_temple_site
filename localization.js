@@ -2,11 +2,8 @@ const siteLanguage = document.getElementById("site-language");
 const languageTrigger = siteLanguage.querySelector(".language-trigger");
 const languageMenu = siteLanguage.querySelector(".language-menu");
 const languageCurrent = siteLanguage.querySelector(".language-current");
-const languageMode = siteLanguage.querySelector(".language-mode");
 const languageButtons = [...languageMenu.querySelectorAll("[data-language]")];
-const languageOptions = new Map(languageButtons
-  .filter(button => button.dataset.language)
-  .map(button => [button.dataset.language, button]));
+const languageOptions = new Map(languageButtons.map(button => [button.dataset.language, button]));
 const englishLanguage = "en";
 const languageStorageKey = "furry-temple-site-language";
 const siteCatalogs = globalThis.furryTempleLocales = new Map();
@@ -83,20 +80,15 @@ async function renderSiteLanguage(language) {
   document.documentElement.lang = option.lang;
   languageCurrent.lang = option.lang;
   languageCurrent.textContent = option.textContent;
+  for (const button of languageButtons) {
+    button.setAttribute("aria-pressed", String(button === option));
+  }
 
   for (const { element, attribute, key, english } of localizedBindings) {
     const value = catalog?.[key] ?? english;
     if (attribute) element.setAttribute(attribute, value);
     else element.textContent = value;
   }
-}
-
-function updateLanguagePreference() {
-  languageMode.hidden = manualLanguage !== null;
-  for (const button of languageButtons) {
-    button.setAttribute("aria-pressed", String(button.dataset.language === (manualLanguage ?? "")));
-  }
-  void renderSiteLanguage(manualLanguage ?? currentBrowserLanguage());
 }
 
 function closeLanguageMenuAndFocusTrigger() {
@@ -108,14 +100,13 @@ languageMenu.addEventListener("click", event => {
   const button = event.target.closest("[data-language]");
   if (!button) return;
 
-  manualLanguage = button.dataset.language || null;
+  manualLanguage = button.dataset.language;
   try {
-    if (manualLanguage) localStorage.setItem(languageStorageKey, manualLanguage);
-    else localStorage.removeItem(languageStorageKey);
+    localStorage.setItem(languageStorageKey, manualLanguage);
   } catch {
     // Language switching still works if storage is disabled.
   }
-  updateLanguagePreference();
+  void renderSiteLanguage(manualLanguage);
   closeLanguageMenuAndFocusTrigger();
 });
 
@@ -151,5 +142,5 @@ window.addEventListener("languagechange", () => {
   if (manualLanguage === null) void renderSiteLanguage(currentBrowserLanguage());
 });
 
-updateLanguagePreference();
+void renderSiteLanguage(manualLanguage ?? currentBrowserLanguage());
 siteLanguage.hidden = false;

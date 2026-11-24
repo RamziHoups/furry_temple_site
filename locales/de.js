@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("de", {
   "socialDescription": "Eine Multiplayer-Sandbox ab 18 Jahren für Rollenspiel, Charaktergestaltung und gemeinsames Bauen. Bemale deine Figur, teile deine Kreationen und gestalte mit visuellen Werkzeugen interaktive Objekte, Benutzeroberflächen und Spiele.",
   "socialImageAlt": "Figuren aus Furry Temple servieren Sandwiches und Kaffee in einem gemütlichen Café",
   "languageLabel": "Sprache",
-  "languageAutomatic": "Browsersprache verwenden",
-  "languageAutomaticSelection": "Automatisch",
   "aboutLink": "Über das Spiel",
   "featuresLink": "Funktionen",
   "downloadLink": "Download",

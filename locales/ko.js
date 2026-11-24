@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("ko", {
   "socialDescription": "역할극, 캐릭터 제작, 공동 월드 제작을 즐길 수 있는 18세 이상 이용자용 멀티플레이어 샌드박스입니다. 캐릭터를 칠하고 작품을 공유하며, 시각 도구로 상호작용 오브젝트와 인터페이스, 게임을 만들어 보세요.",
   "socialImageAlt": "아늑한 카페에서 샌드위치와 커피를 내놓는 Furry Temple 캐릭터들",
   "languageLabel": "언어",
-  "languageAutomatic": "브라우저 언어 사용",
-  "languageAutomaticSelection": "자동",
   "aboutLink": "게임 소개",
   "featuresLink": "특징",
   "downloadLink": "다운로드",

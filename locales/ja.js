@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("ja", {
   "socialDescription": "ロールプレイやキャラクター作成、共同ワールド制作を楽しめる 18 歳以上向けのマルチプレイ・サンドボックスです。キャラクターをペイントし、作品を共有しましょう。ビジュアルツールでインタラクティブなオブジェクトやインターフェース、ゲームを作れます。",
   "socialImageAlt": "居心地の良いカフェでサンドイッチとコーヒーを提供する Furry Temple のキャラクターたち",
   "languageLabel": "言語",
-  "languageAutomatic": "ブラウザーの言語を使用",
-  "languageAutomaticSelection": "自動",
   "aboutLink": "ゲーム紹介",
   "featuresLink": "特徴",
   "downloadLink": "ダウンロード",

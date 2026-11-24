@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("fr", {
   "socialDescription": "Un jeu bac à sable multijoueur réservé aux adultes (18+) pour jouer des rôles, créer des personnages et construire des mondes à plusieurs. Peignez votre personnage, partagez vos créations et utilisez des outils visuels pour concevoir des objets interactifs, des interfaces et des jeux.",
   "socialImageAlt": "Des personnages de Furry Temple servent des sandwichs et du café dans un café chaleureux",
   "languageLabel": "Langue",
-  "languageAutomatic": "Utiliser la langue du navigateur",
-  "languageAutomaticSelection": "Automatique",
   "aboutLink": "À propos",
   "featuresLink": "Fonctionnalités",
   "downloadLink": "Téléchargement",

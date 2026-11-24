@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("th", {
   "socialDescription": "แซนด์บ็อกซ์หลายผู้เล่นสำหรับผู้มีอายุ 18 ปีขึ้นไป ให้คุณสวมบทบาท สร้างตัวละคร และร่วมกันสร้างโลก ลงสีตัวละคร แบ่งปันผลงาน และสร้างวัตถุโต้ตอบ อินเทอร์เฟซ และเกมด้วยเครื่องมือแบบภาพ",
   "socialImageAlt": "ตัวละครจาก Furry Temple เสิร์ฟแซนด์วิชและกาแฟในคาเฟ่บรรยากาศอบอุ่น",
   "languageLabel": "ภาษา",
-  "languageAutomatic": "ใช้ภาษาของเบราว์เซอร์",
-  "languageAutomaticSelection": "อัตโนมัติ",
   "aboutLink": "เกี่ยวกับเกม",
   "featuresLink": "ฟีเจอร์",
   "downloadLink": "ดาวน์โหลด",

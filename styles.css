@@ -288,10 +288,6 @@ main,
   cursor: pointer;
 }
 
-.language-menu button:first-child {
-  margin-bottom: 0.25rem;
-}
-
 .language-menu button:hover,
 .language-menu button[aria-pressed="true"] {
   background: #3c3453;

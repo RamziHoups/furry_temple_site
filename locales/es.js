@@ -24,8 +24,6 @@ globalThis.furryTempleLocales.set("es", {
   "socialDescription": "Un sandbox multijugador para adultos (18+) centrado en el juego de rol, la creación de personajes y la construcción de mundos en grupo. Pinta tu personaje, comparte tus creaciones y usa herramientas visuales para crear objetos interactivos, interfaces y juegos.",
   "socialImageAlt": "Personajes de Furry Temple sirven sándwiches y café en una cafetería acogedora",
   "languageLabel": "Idioma",
-  "languageAutomatic": "Usar el idioma del navegador",
-  "languageAutomaticSelection": "Automático",
   "aboutLink": "El juego",
   "featuresLink": "Características",
   "downloadLink": "Descargas",
