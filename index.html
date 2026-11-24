@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#242338">
+    <title>Furry Temple</title>
+    <meta name="description" content="Furry Temple is an adult (18+) online furry sandbox. Roleplay with friends, customize and paint characters, build worlds together, and create and share furniture, interactive objects and games." data-i18n-content="metaDescription">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Furry Temple">
+    <meta property="og:title" content="Furry Temple">
+    <meta property="og:description" content="An adult (18+) multiplayer sandbox for roleplay, character creation and building worlds together. Paint your character, share your creations, and make interactive objects, interfaces and games with visual tools." data-i18n-content="socialDescription">
+    <meta property="og:image" content="assets/furry-temple-hero.png">
+    <meta property="og:image:alt" content="Furry Temple characters serving sandwiches and coffee in a cozy café" data-i18n-content="socialImageAlt">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="assets/furry-temple-icon.png">
+    <link rel="apple-touch-icon" href="assets/furry-temple-icon.png">
+    <link rel="preload" as="image" href="assets/furry-temple-hero.png" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Furry Temple home" data-i18n-aria-label="homeLabel">
+        <img src="assets/furry-temple-icon.png" alt="" width="44" height="44">
+        <span>Furry Temple</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation" data-i18n-aria-label="navigationLabel">
+        <a href="#about" data-i18n="aboutLink">About</a>
+        <a href="#features" data-i18n="featuresLink">Features</a>
+        <a href="#download" data-i18n="downloadLink">Download</a>
+        <a href="#faq" data-i18n="faqLink">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-discord" href="https://discord.com/invite/X732TQEw47" target="_blank" rel="noopener noreferrer">Discord</a>
+        <details class="language-picker" id="site-language" hidden>
+          <summary class="language-trigger">
+            <span class="language-sr-only" data-i18n="languageLabel">Language</span>
+            <span class="language-globe" aria-hidden="true"></span>
+            <span class="language-current" lang="en" translate="no">English</span>
+            <span class="language-mode language-sr-only" data-i18n="languageAutomaticSelection">Automatic</span>
+          </summary>
+          <div class="language-menu" role="group" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button type="button" data-language="" aria-pressed="true" data-i18n="languageAutomatic">Use browser language</button>
+            <button type="button" data-language="en" lang="en" translate="no" aria-pressed="false">English</button>
+            <button type="button" data-language="ru" lang="ru" translate="no" aria-pressed="false">Русский</button>
+            <button type="button" data-language="fr" lang="fr" translate="no" aria-pressed="false">Français</button>
+            <button type="button" data-language="it" lang="it" translate="no" aria-pressed="false">Italiano</button>
+            <button type="button" data-language="de" lang="de" translate="no" aria-pressed="false">Deutsch</button>
+            <button type="button" data-language="es" lang="es-ES" translate="no" aria-pressed="false">Español (España)</button>
+            <button type="button" data-language="zh" lang="zh-Hans" translate="no" aria-pressed="false">简体中文</button>
+            <button type="button" data-language="ko" lang="ko" translate="no" aria-pressed="false">한국어</button>
+            <button type="button" data-language="pl" lang="pl" translate="no" aria-pressed="false">Polski</button>
+            <button type="button" data-language="pt-br" lang="pt-BR" translate="no" aria-pressed="false">Português (Brasil)</button>
+            <button type="button" data-language="th" lang="th" translate="no" aria-pressed="false">ไทย</button>
+            <button type="button" data-language="tr" lang="tr" translate="no" aria-pressed="false">Türkçe</button>
+            <button type="button" data-language="uk" lang="uk" translate="no" aria-pressed="false">Українська</button>
+            <button type="button" data-language="cs" lang="cs" translate="no" aria-pressed="false">Čeština</button>
+            <button type="button" data-language="ja" lang="ja" translate="no" aria-pressed="false">日本語</button>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="hero-labels">
+              <p class="eyebrow" data-i18n="heroEyebrow">online furry sandbox</p>
+              <span class="adult-badge" data-i18n="adultBadge">Adult game · 18+</span>
+            </div>
+            <h1 id="hero-title">Furry Temple</h1>
+            <p class="hero-text" data-i18n="heroBody">
+              Customize and paint your character, share your creations, and explore other players’ worlds. Create game mechanics in a visual editor without writing code, while built-in AI translation helps you communicate with players who speak different languages.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions" data-i18n-aria-label="primaryActionsLabel">
+              <a class="button primary" href="https://auth.furrytemple.com/updates/windows">
+                <span class="button-icon" aria-hidden="true">↓</span>
+                <span data-i18n="downloadWindows">Download for Windows</span>
+              </a>
+              <a class="button secondary" href="https://discord.com/invite/X732TQEw47" target="_blank" rel="noopener noreferrer">
+                <span class="button-icon" aria-hidden="true">#</span>
+                <span data-i18n="joinDiscord">Join Discord</span>
+              </a>
+            </div>
+            <div class="status-row" aria-label="Game highlights" data-i18n-aria-label="highlightsLabel">
+              <span data-i18n="roleplay">Roleplay</span>
+              <span data-i18n="sandbox">Sandbox</span>
+              <span data-i18n="characterPainting">Character painting</span>
+              <span data-i18n="coopEditing">Co-op map editing</span>
+              <span data-i18n="visualScripting">Visual scripting</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro band" id="about" aria-labelledby="about-title">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow" data-i18n="aboutEyebrow">About Furry Temple</p>
+            <h2 id="about-title"><span data-i18n="aboutPlayTitle">Play together.</span><span data-i18n="aboutBuildTitle">Build your world.</span></h2>
+          </div>
+          <div class="section-copy">
+            <p data-i18n="aboutPlayBody">
+              Furry Temple is an adult (18+) online sandbox where you play as your own furry character.
+              Join public rooms or invite friends to roleplay, chat, explore maps and play games created by the community.
+              Each map can have its own activities, interactive objects and rules.
+            </p>
+            <p data-i18n="aboutCharacterBody">
+              Customize your character’s body proportions and appearance, then paint every part directly on the 3D model.
+              Brushes, layers and symmetry tools let you create detailed patterns and control your colors.
+              Save different looks, publish them in the character library and discover designs made by other players.
+            </p>
+            <p data-i18n="aboutBuildBody">
+              Build and edit maps with friends: sculpt terrain, arrange objects, create your own furniture and interactive props,
+              and share them with other players. Set the lighting and weather, add animations and interfaces,
+              and use Blueprint to turn your ideas into working game mechanics without writing code.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow" id="features-title" data-i18n="featuresTitle">Game features</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card teal">
+            <span class="feature-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10-1-7 7 4h2l7-4-1 7a8 8 0 1 1-14 0Z"/><path d="M8 13h.01M16 13h.01m-6 3 2 1 2-1"/></svg>
+            </span>
+            <h3 data-i18n="characterTitle">Character creation and painting</h3>
+            <p data-i18n="characterBody">
+              Shape your character’s proportions and appearance, then paint the whole model or focus on one part for detail work.
+              Combine brushes, layers and symmetry to create sharp patterns, soft color transitions and fine details.
+              Create skins from scratch or edit existing ones, and share your skins with other players.
+            </p>
+          </article>
+          <article class="feature-card violet">
+            <span class="feature-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-2 2V11.5a9.5 9.5 0 0 1 19 0Z"/><path d="M7 11h.01M12 11h.01M17 11h.01"/></svg>
+            </span>
+            <h3 data-i18n="multiplayerTitle">Multiplayer and roleplay</h3>
+            <p data-i18n="multiplayerBody">
+              Meet other players in public rooms or gather with friends in a private session. Explore maps, roleplay and play together.
+              Add friends and exchange messages.
+              Built-in AI text translation helps players who speak different languages understand each other.
+            </p>
+          </article>
+          <article class="feature-card amber">
+            <span class="feature-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></svg>
+            </span>
+            <h3 data-i18n="worldTitle">Build worlds together</h3>
+            <p data-i18n="worldBody">
+              Work on the same map with friends, from the landscape to the furnished interior.
+              Sculpt hills, smooth paths, construct buildings and arrange objects.
+              Adjust the time of day, indoor and outdoor lighting, clouds, rain and thunderstorms to set the atmosphere of your world.
+            </p>
+          </article>
+          <article class="feature-card teal">
+            <span class="feature-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10 9-5M12 12 3 7m9 5v10"/><path d="m7.5 4.5 9 5"/></svg>
+            </span>
+            <h3 data-i18n="objectsTitle">Create and share objects</h3>
+            <p data-i18n="objectsBody">
+              Make your own furniture, decorations and interactive props with built-in modeling tools.
+              Combine and cut shapes, edit geometry and apply materials.
+              Save your creation as a reusable object with its behavior, publish it in the community library,
+              or bring other players’ creations into your map.
+            </p>
+          </article>
+          <article class="feature-card rose">
+            <span class="feature-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="7" height="6" rx="1.5"/><rect x="15" y="15" width="7" height="6" rx="1.5"/><path d="M9 6h5a4 4 0 0 1 4 4v5M6 9v9h9"/></svg>
+            </span>
+            <h3 data-i18n="blueprintTitle">Blueprint game logic</h3>
+            <p data-i18n="blueprintBody">
+              Connect events, conditions and actions to define how your game works.
+              Use variables and reusable functions to track scores, control NPCs and create objectives, interactions and game rules.
+              Connect objects, physics and interfaces into complete game systems through a visual graph, without writing code.
+            </p>
+          </article>
+          <article class="feature-card violet">
+            <span class="feature-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="16" rx="2"/><path d="M2 8h20M8 8v11m4-7 5 2-5 2v-4ZM8 22h8m-4-3v3"/></svg>
+            </span>
+            <h3 data-i18n="interfacesTitle">Interfaces and animation</h3>
+            <p data-i18n="interfacesBody">
+              Design game menus, interactive screens and status panels in the 2D editor, then connect their controls and data to Blueprint.
+              Animate objects and create character poses and animation sequences with a keyframe timeline.
+              Add sounds and particle effects that respond to events in your game.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="download band" id="download" aria-labelledby="download-title">
+        <div class="download-panel">
+          <div>
+            <p class="eyebrow" data-i18n="downloadLink">Download</p>
+            <h2 id="download-title" data-i18n="downloadTitle">Download Furry Temple</h2>
+            <p>
+              <span data-i18n="downloadInstructions">Download the latest full beta as a ZIP archive. Extract it into a new folder and open Furry Temple.exe.</span>
+              <span class="alpha-note" data-i18n="windowsBeta">Windows beta</span>
+            </p>
+          </div>
+          <div class="download-list" aria-label="Game downloads and platforms" data-i18n-aria-label="platformsLabel">
+            <a class="download-item" href="https://auth.furrytemple.com/updates/windows">
+              <span class="download-platform"><span data-i18n="downloadWindows">Download for Windows</span> <span aria-hidden="true">↓</span></span>
+              <span class="download-meta">ZIP</span>
+            </a>
+            <a class="download-versions" href="https://auth.furrytemple.com/updates/recovery" data-i18n="chooseVersion">Choose a version</a>
+            <div class="download-item muted-option" aria-label="Linux version not announced" data-i18n-aria-label="linuxLabel">
+              <span class="download-platform">Linux</span>
+              <span class="download-meta" data-i18n="notAnnounced">Not announced</span>
+            </div>
+            <div class="download-item muted-option" aria-label="macOS version not announced" data-i18n-aria-label="macLabel">
+              <span class="download-platform">macOS</span>
+              <span class="download-meta" data-i18n="notAnnounced">Not announced</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lore" aria-labelledby="lore-title">
+        <div class="lore-visual">
+          <img src="assets/nektogone-logo.png" alt="Nektogone studio logo with a white N surrounded by colored crystals" data-i18n-alt="studioLogoAlt" width="720" height="720" loading="lazy" decoding="async">
+        </div>
+        <div class="lore-copy">
+          <p class="eyebrow" data-i18n="teamEyebrow">The team</p>
+          <h2 id="lore-title" data-i18n="teamTitle">Developed by Nektogone</h2>
+          <p data-i18n="teamBody">
+            We are Nektogone, the developers and artists behind Furry Temple.
+            We build the game and its creative tools together: character customization, 3D painting,
+            multiplayer, world building and visual game logic.
+          </p>
+          <p data-i18n="teamCommunityBody">
+            Furry Temple is in beta and continues to grow. Join us on Discord to follow our progress,
+            discuss features, report issues and show the characters, objects and worlds you create.
+          </p>
+        </div>
+      </section>
+
+      <section class="screenshots" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="screenshotsEyebrow">Screenshots</p>
+          <h2 id="screenshots-title" data-i18n="screenshotsTitle">Explore the game and its creative tools</h2>
+          <p class="gallery-note" data-i18n="galleryNote">Select an image to view it full size.</p>
+        </div>
+        <div class="screenshot-grid">
+          <figure class="screenshot-card">
+            <a class="screenshot-link" href="assets/screenshots/furry-cafe.webp" aria-haspopup="dialog" aria-label="View the Furry Café in-game screenshot full size" data-i18n-aria-label="cafeOpen">
+              <img src="assets/screenshots/furry-cafe.webp" alt="In-game view of Furry Café, with green counters, wooden tables and a garden outside" data-i18n-alt="cafeAlt" width="1920" height="1080" loading="lazy" decoding="async">
+              <span class="screenshot-expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></span>
+            </a>
+            <figcaption><p class="screenshot-category" data-i18n="ingameMap">In-game map</p><h3>Furry Café</h3></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <a class="screenshot-link" href="assets/screenshots/atelier-workshop.webp" aria-haspopup="dialog" aria-label="View the Atelier Workshop in-game screenshot full size" data-i18n-aria-label="atelierOpen">
+              <img src="assets/screenshots/atelier-workshop.webp" alt="In-game view of Atelier Workshop, with workbenches, tools and a large window" data-i18n-alt="atelierAlt" width="1920" height="1080" loading="lazy" decoding="async">
+              <span class="screenshot-expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></span>
+            </a>
+            <figcaption><p class="screenshot-category" data-i18n="ingameMap">In-game map</p><h3>Atelier Workshop</h3></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <a class="screenshot-link" href="assets/screenshots/level-editor.webp" aria-haspopup="dialog" aria-label="View the 3D level editor screenshot full size" data-i18n-aria-label="levelOpen">
+              <img src="assets/screenshots/level-editor.webp" alt="Furry Café in the 3D level editor, showing the map, object list, transform gizmo and properties" data-i18n-alt="levelAlt" width="2559" height="1438" loading="lazy" decoding="async">
+              <span class="screenshot-expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></span>
+            </a>
+            <figcaption><p class="screenshot-category" data-i18n="worldBuilding">World building</p><h3 data-i18n="levelEditor">3D level editor</h3></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <a class="screenshot-link" href="assets/screenshots/interface-editor.webp" aria-haspopup="dialog" aria-label="View the 2D interface editor screenshot full size" data-i18n-aria-label="interfaceOpen">
+              <img src="assets/screenshots/interface-editor.webp" alt="The 2D interface editor displaying the Café market screen with products, a shopping cart and layout properties" data-i18n-alt="interfaceAlt" width="2559" height="1438" loading="lazy" decoding="async">
+              <span class="screenshot-expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></span>
+            </a>
+            <figcaption><p class="screenshot-category" data-i18n="interfaceDesign">Interface design</p><h3 data-i18n="interfaceEditor">2D interface editor</h3></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <a class="screenshot-link" href="assets/screenshots/blueprint-editor.webp" aria-haspopup="dialog" aria-label="View the Blueprint editor screenshot full size" data-i18n-aria-label="blueprintOpen">
+              <img src="assets/screenshots/blueprint-editor.webp" alt="Blueprint graphs connecting product button signals to actions that add items to the café shopping cart" data-i18n-alt="blueprintAlt" width="2559" height="1438" loading="lazy" decoding="async">
+              <span class="screenshot-expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></span>
+            </a>
+            <figcaption><p class="screenshot-category" data-i18n="visualScripting">Visual scripting</p><h3 data-i18n="blueprintTitle">Blueprint game logic</h3></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <a class="screenshot-link" href="assets/screenshots/character-painting.webp" aria-haspopup="dialog" aria-label="View the character painting screenshot full size" data-i18n-aria-label="paintingOpen">
+              <img src="assets/screenshots/character-painting.webp" alt="A pink rabbit character in the painting editor, with brushes, mirror controls and color settings" data-i18n-alt="paintingAlt" width="2559" height="1439" loading="lazy" decoding="async">
+              <span class="screenshot-expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></span>
+            </a>
+            <figcaption><p class="screenshot-category" data-i18n="characterCustomization">Character customization</p><h3 data-i18n="characterPainting">Character painting</h3></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="faq band" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="faqLink">FAQ</p>
+          <h2 id="faq-title" data-i18n="faqTitle">More about the game</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary data-i18n="faqGameQuestion">What is Furry Temple?</summary>
+            <p data-i18n="faqGameBody">
+              Furry Temple is an adult (18+) online furry sandbox for social play, roleplay and creating your own content.
+              Join a room to play on its map with other people, or build your own world and decide what players can do there.
+              Character painting, map editing and visual game creation are built into the game.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqCharacterQuestion">How can I customize my character?</summary>
+            <p data-i18n="faqCharacterBody">
+              Adjust body proportions and appearance, then paint all parts of your character directly in 3D.
+              Use different brushes, layers, symmetry and color groups to build and refine your design.
+              Create skins from scratch or edit existing ones, share your work and discover skins made by other players.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqMapsQuestion">Can I build a map with friends?</summary>
+            <p data-i18n="faqMapsBody">
+              Yes. Invite friends into the same editing session and work on the map together.
+              One person can shape the landscape while another builds a house, furnishes a room or sets up an interactive object.
+              The shared editor brings terrain, objects, lighting and game logic into one project.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqObjectsQuestion">Can I make my own furniture and objects?</summary>
+            <p data-i18n="faqObjectsBody">
+              Yes. Use the built-in modeling tools to combine shapes, cut openings, edit geometry and add materials.
+              Turn your work into reusable furniture, scenery or interactive props, with Blueprint behavior attached.
+              Publish objects in the community library and use shared creations in your own maps.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqMechanicsQuestion">How do I create game mechanics?</summary>
+            <p data-i18n="faqMechanicsBody">
+              Blueprint connects events, conditions and actions in a visual graph. Variables and functions let you track game state
+              and reuse logic across objects. Create scoring systems, interactive puzzles, NPC behavior and objectives,
+              then connect them to your own interface without writing code.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqInterfacesQuestion">Can I create interfaces and animations?</summary>
+            <p data-i18n="faqInterfacesBody">
+              The 2D editor lets you build menus, interactive screens and status displays with buttons, text, images and other controls,
+              then link them to Blueprint. Animation tools provide a timeline and keyframes for objects and characters,
+              so you can create moving props, poses and animation sequences for your map.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqTranslationQuestion">What does AI translation support?</summary>
+            <p data-i18n="faqTranslationBody">
+              The built-in AI translator helps players who speak different languages communicate in text chat.
+              Choose manual translation when you need it or automatic translation for ongoing conversations,
+              and switch between the translation and the original message.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqFriendsQuestion">How do I play with friends?</summary>
+            <p data-i18n="faqFriendsBody">
+              Choose a map and create a room for your group, or join an existing public room together.
+              Add friends and use in-game messages to stay in touch while you play.
+              You can also explore built-in solo maps on your own.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqDownloadQuestion">How do I download the game?</summary>
+            <p data-i18n="faqDownloadBody">
+              Select Download for Windows to get the latest full beta ZIP. Select Choose a version in the Download section to see all available full builds.
+              Follow our Discord for new builds and release announcements. Linux and macOS versions have not been announced.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faqAdultsQuestion">Is this an adult game?</summary>
+            <p data-i18n="faqAdultsBody">Yes. Furry Temple is an adult game intended for players aged 18 and over.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="screenshot-viewer" id="screenshotViewer" aria-labelledby="screenshotViewerTitle">
+      <div class="screenshot-viewer-header">
+        <h3 id="screenshotViewerTitle" data-i18n="screenshotTitle">Screenshot</h3>
+        <form method="dialog">
+          <button class="screenshot-close" type="submit" aria-label="Close screenshot" data-i18n-aria-label="closeScreenshot" autofocus>×</button>
+        </form>
+      </div>
+      <img class="screenshot-viewer-image" id="screenshotViewerImage" alt="">
+    </dialog>
+
+    <footer class="site-footer">
+      <span>© 2026 Nektogone. Furry Temple.</span>
+      <div>
+        <a href="#download" data-i18n="downloadLink">Download</a>
+        <a href="https://discord.com/invite/X732TQEw47" target="_blank" rel="noopener noreferrer">Discord</a>
+      </div>
+    </footer>
+    <script src="localization.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

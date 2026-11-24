@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <!-- Static decoration matching ui/main_menu/components/panel_surface.gd. -->
+  <defs>
+    <path id="star" d="M 0 -1 L .25 -.25 L 1 0 L .25 .25 L 0 1 L -.25 .25 L -1 0 L -.25 -.25 Z"/>
+  </defs>
+  <g fill="#b8abe0" fill-opacity=".32">
+    <use href="#star" transform="translate(112 120) scale(7)"/>
+    <use href="#star" transform="translate(672 60) scale(4)"/>
+    <use href="#star" transform="translate(1456 150) scale(7)"/>
+    <use href="#star" transform="translate(128 490) scale(4)"/>
+    <use href="#star" transform="translate(832 470) scale(5)"/>
+    <use href="#star" transform="translate(1376 870) scale(3)"/>
+    <use href="#star" transform="translate(608 850) scale(4)"/>
+    <use href="#star" transform="translate(272 780) scale(3)"/>
+    <use href="#star" transform="translate(1152 790) scale(3)"/>
+  </g>
+  <g fill="#b8abe0" fill-opacity=".24">
+    <circle cx="256" cy="250" r="1.7"/>
+    <circle cx="480" cy="90" r="1.7"/>
+    <circle cx="1072" cy="160" r="1.7"/>
+    <circle cx="336" cy="660" r="1.7"/>
+    <circle cx="976" cy="820" r="1.7"/>
+    <circle cx="1504" cy="660" r="1.7"/>
+    <circle cx="1184" cy="70" r="1.7"/>
+    <circle cx="88" cy="330" r="1.7"/>
+  </g>
+</svg>
