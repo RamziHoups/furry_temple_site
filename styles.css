@@ -93,6 +93,7 @@ main,
 
 .brand {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 0.7rem;
   min-width: 0;
@@ -112,6 +113,8 @@ main,
 .nav-links {
   display: flex;
   gap: 0.35rem;
+  min-width: 0;
+  overflow-x: auto;
   padding: 0.35rem;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -119,8 +122,7 @@ main,
 }
 
 .nav-links a,
-.header-discord {
-  min-height: 38px;
+.header-social-link {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
   color: var(--muted);
@@ -130,14 +132,22 @@ main,
   transition: background 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
+.nav-links a {
+  min-height: 38px;
+}
+
+.nav-links a:focus-visible {
+  outline-offset: 2px;
+}
+
 .nav-links a:hover,
-.header-discord:hover {
+.header-social-link:hover {
   background: rgba(170, 139, 210, 0.14);
   color: var(--text);
   transform: translateY(-1px);
 }
 
-.header-discord {
+.header-social-link {
   border: 1px solid rgba(170, 139, 210, 0.34);
   background: rgba(170, 139, 210, 0.13);
   color: #edeafa;
@@ -154,12 +164,17 @@ main,
   position: relative;
 }
 
+.header-social-link,
 .language-trigger {
   display: flex;
   align-items: center;
+  height: max(38px, 2.625rem);
+  padding-block: 0;
+}
+
+.language-trigger {
   gap: 0.55rem;
-  min-height: 38px;
-  padding: 0.5rem 0.8rem;
+  padding-inline: 0.8rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(34, 33, 55, 0.62);
@@ -186,6 +201,7 @@ main,
 }
 
 .language-trigger::after {
+  flex-shrink: 0;
   width: 0.4rem;
   height: 0.4rem;
   border-right: 1px solid currentColor;
@@ -868,7 +884,6 @@ h3 {
   .nav-links {
     order: 3;
     width: 100%;
-    overflow-x: auto;
     justify-content: space-between;
   }
 
@@ -906,10 +921,33 @@ h3 {
     display: none;
   }
 
-  .header-discord,
+  .site-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-actions {
+    justify-self: end;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .header-social-link,
   .language-trigger,
   .nav-links a {
     font-size: 0.86rem;
+  }
+
+  .header-social-link,
+  .language-trigger {
+    padding-inline: 0.6rem;
+  }
+
+  .language-picker,
+  .language-current {
+    min-width: 0;
   }
 
   .language-current {
@@ -922,6 +960,7 @@ h3 {
   }
 
   .nav-links {
+    grid-column: 1 / -1;
     gap: 0.1rem;
   }
 
